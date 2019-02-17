@@ -7,6 +7,10 @@
 
 <!-- Load standard AIML set -->
 <learn>aiml/botdata/elife/*.aiml</learn>
+
+<!-- Load KB AIML set -->
+<learn>/data/kb/*.aiml</learn>
+
 </template>
 </category>
 

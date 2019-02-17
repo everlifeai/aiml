@@ -23,9 +23,11 @@ k.learn("std-startup.xml")
 
 #       outcome/
 # This command loads the 'standard' AIML files
+# and the user KB files.
 # (TODO: Should we remove this? Users can type
 # in the same command)
 k.respond("load aiml b")
+
 
 #       understand/
 # Use a python class to handle HTTP POST requests
