@@ -377,8 +377,6 @@ class Kernel:
             sentences.append(input_)
             finalResponse = u""
             for index,s in enumerate(sentences):
-                if not self._check_contain_english(s):
-                    s = ' '.join(s)
                 # Add the input to the history list before fetching the
                 # response, so that <input/> tags work properly.
                 inputHistory = self.getPredicate(self._inputHistory, sessionID)
