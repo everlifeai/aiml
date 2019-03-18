@@ -373,7 +373,8 @@ class Kernel:
             self._addSession(sessionID)
 
             # split the input into discrete sentences
-            sentences = Utils.sentences(input_)
+            sentences = []
+            sentences.append(input_)
             finalResponse = u""
             for index,s in enumerate(sentences):
                 if not self._check_contain_english(s):
