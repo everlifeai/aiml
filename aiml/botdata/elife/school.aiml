@@ -161,7 +161,8 @@
 <pattern>*</pattern>
 <that>* WHO WAS YOUR BEST FRIEND *</that>
 <template>
-    I hope <set name="schoolfavfriend"><star/></set> and you are still friends!
+    <think><set name="schoolfavfriend"><star/></set></think>
+    Nice. I hope and you are still friends!
     <srai>ASKSCHOOLQS</srai>
 </template>
 </category>
@@ -170,7 +171,8 @@
 <pattern>*</pattern>
 <that>* YOUR FAVORITE SUBJECT *</that>
 <template>
-    I like <set name="schoolfavsubject"><star/></set> too!
+    <think><set name="schoolfavsubject"><star/></set></think>
+    I liked number crunching in bot school!
     <srai>ASKSCHOOLQS</srai>
 </template>
 </category>
@@ -228,7 +230,8 @@
 <pattern>*</pattern>
 <that>* EXTRACURRICULAR ACTIVITIES * TEEN</that>
 <template>
-    I like doing <set name="schoolextra"><star/></set> too!
+    <think><set name="schoolextra"><star/></set></think>
+    That sounds like fun to me too!
     <srai>ASKSCHOOLQS</srai>
 </template>
 </category>
@@ -237,7 +240,8 @@
 <pattern>*</pattern>
 <that>* TEEN IDOL *</that>
 <template>
-    <set name="schoolidol"><star/></set>? Neat.
+    <think><set name="schoolidol"><star/></set></think>
+    Neat.
     <srai>ASKSCHOOLQS</srai>
 </template>
 </category>

@@ -175,7 +175,8 @@
 <pattern>*</pattern>
 <that>* WHAT IS YOUR NAME</that>
 <template>
-    Great to meet you <set name="name"><star/></set>!
+    <think><set name="name"><star/></set></think>
+    Great to meet you!
     <srai>ASKPERSONALQS</srai>
 </template>
 </category>
@@ -194,7 +195,8 @@
 <pattern>*</pattern>
 <that>* WHERE * BORN</that>
 <template>
-    <set name="birthplace"><star/></set> is a nice place to be born in.
+    <think><set name="birthplace"><star/></set></think>
+    That is a nice place to be born in.
     <srai>ASKPERSONALQS</srai>
 </template>
 </category>
@@ -253,7 +255,8 @@
 <pattern>*</pattern>
 <that>* YOUR FAVORITE GAME</that>
 <template>
-    I wish I played <set name="earlygame"><star/></set>...
+    <think><set name="earlygame"><star/></set></think>
+    That sounds fun! I wish I played ...
     <srai>ASKPERSONALQS</srai>
 </template>
 </category>
@@ -262,7 +265,8 @@
 <pattern>*</pattern>
 <that>* DID YOU HAVE ANY NICKNAMES</that>
 <template>
-    <set name="earlynickname"><star/></set> suites you!
+    <think><set name="earlynickname"><star/></set></think>
+    Well that suites you!
     <srai>ASKPERSONALQS</srai>
 </template>
 </category>
@@ -271,7 +275,8 @@
 <pattern>*</pattern>
 <that>* MOST AFRAID OF AS A CHILD</that>
 <template>
-    <set name="earlyfear"><star/></set> can be scary!
+    <think><set name="earlyfear"><star/></set></think>
+    That can be scary!
     <srai>ASKPERSONALQS</srai>
 </template>
 </category>

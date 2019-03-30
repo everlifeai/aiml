@@ -101,7 +101,8 @@
 <pattern>*</pattern>
 <that>* WHO WAS YOUR FIRST LOVE</that>
 <template>
-    <set name="firstlove"><star/></set> is a sweet name.
+    <think><set name="firstlove"><star/></set></think>
+    That is a sweet name.
     <srai>ASKLOVEQS</srai>
 </template>
 </category>
