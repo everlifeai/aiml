@@ -134,6 +134,9 @@ class S(BaseHTTPRequestHandler):
 # as a shutdown
 def run(server_class=HTTPServer, handler_class=S, port=8765):
     try:
+        num = os.environ["ELIFE_NODE_NUM"]
+        if(num):
+            port = port + int(num)*100
         server_address = ('', port)
         httpd = server_class(server_address, handler_class)
         print 'Starting httpd...(localhost:%s)' % port
