@@ -8,6 +8,7 @@ from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import io
 import json
 import sys
+import os
 
 import aiml
 
@@ -28,6 +29,11 @@ k.learn("std-startup.xml")
 # in the same command)
 k.respond("load aiml b")
 
+#       outcome/
+# Read all the KB generated AIML files
+# from the KB data location ($ELIFE_HOME/kb/*.aiml)
+kbs = os.path.join(os.environ["ELIFE_HOME"], "kb", "*.aiml")
+k.learn(kbs)
 
 #       understand/
 # Use a python class to handle HTTP POST requests
