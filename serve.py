@@ -62,7 +62,7 @@ class S(BaseHTTPRequestHandler):
                 self.send_response(404)
                 self.end_headers()
         except:
-            print sys.exc_info()
+            print (sys.exc_info())
             self.send_response(400)
             self.end_headers()
 
