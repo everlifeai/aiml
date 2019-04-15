@@ -32,7 +32,7 @@ k.respond("load aiml b")
 #       outcome/
 # Read all the KB generated AIML files
 # from the KB data location ($ELIFE_HOME/kb/*.aiml)
-kbs = os.path.join(os.environ["ELIFE_HOME"], "kb", "*.aiml")
+kbs = os.path.join(os.environ["ELIFE_HOME"], "data", "kb", "*.aiml")
 k.learn(kbs)
 
 #       understand/
