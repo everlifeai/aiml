@@ -9,6 +9,7 @@ import io
 import json
 import sys
 import os
+import signal
 
 import aiml
 
@@ -129,21 +130,37 @@ class S(BaseHTTPRequestHandler):
                 self.end_headers()
 
 
+httpd = None
+running = True
+def exit_gracefully(ignore1, ignore2):
+    global httpd
+    global running
+    print 'Shutting down...'
+    running=False
+    if httpd:
+        httpd.socket.close()
+
+signal.signal(signal.SIGTERM, exit_gracefully)
+
+
 #       outcome/
 # Start the HTTP server and handle keyboard interrupt
 # as a shutdown
 def run(server_class=HTTPServer, handler_class=S, port=8765):
     try:
+        global httpd
+        global running
         num = os.environ["ELIFE_NODE_NUM"]
         if(num):
             port = port + int(num)*100
         server_address = ('', port)
         httpd = server_class(server_address, handler_class)
         print 'Starting httpd...(localhost:%s)' % port
-        httpd.serve_forever()
+        while running:
+            httpd.handle_request()
     except KeyboardInterrupt:
-        print 'Shutting down...'
-        httpd.socket.close()
+        exit_gracefully(1,2)
+
 
 
 if __name__ == "__main__":
