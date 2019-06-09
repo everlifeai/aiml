@@ -146,10 +146,20 @@ signal.signal(signal.SIGTERM, exit_gracefully)
 #       outcome/
 # Start the HTTP server and handle keyboard interrupt
 # as a shutdown
-def run(server_class=HTTPServer, handler_class=S, port=8765):
+def run(server_class=HTTPServer, handler_class=S):
     try:
         global httpd
         global running
+        port = os.environ["EBRAIN_AIML_PORT"]
+        if(port):
+            try:
+                port = int(port)
+            except ValueError:
+                print "Failed to understand EBRAIN_AIML_PORT"
+                sys.exit(1)
+        else:
+            print "Failed to find EBRAIN_AIML_PORT"
+            sys.exit(1)
         num = os.environ["ELIFE_NODE_NUM"]
         if(num):
             port = port + int(num)*100
