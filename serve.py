@@ -4,7 +4,11 @@
 #       { "msg": "hi there!" }
 # to a HTTP client
 #
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+try:
+    from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+except ImportError:
+    from http.server import BaseHTTPRequestHandler, HTTPServer
+
 import io
 import json
 import sys
@@ -135,7 +139,7 @@ running = True
 def exit_gracefully(ignore1, ignore2):
     global httpd
     global running
-    print 'Shutting down...'
+    print ("Shutting down...")
     running=False
     if httpd:
         httpd.socket.close()
@@ -155,17 +159,17 @@ def run(server_class=HTTPServer, handler_class=S):
             try:
                 port = int(port)
             except ValueError:
-                print "Failed to understand EBRAIN_AIML_PORT"
+                print ("Failed to understand EBRAIN_AIML_PORT")
                 sys.exit(1)
         else:
-            print "Failed to find EBRAIN_AIML_PORT"
+            print ("Failed to find EBRAIN_AIML_PORT")
             sys.exit(1)
         num = os.environ["ELIFE_NODE_NUM"]
         if(num):
             port = port + int(num)*100
         server_address = ('', port)
         httpd = server_class(server_address, handler_class)
-        print 'Starting httpd...(localhost:%s)' % port
+        print ("Starting httpd...(localhost:%s)" % port)
         while running:
             httpd.handle_request()
     except KeyboardInterrupt:
