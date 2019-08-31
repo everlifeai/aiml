@@ -3,13 +3,7 @@
 
     <!-- understand/
     Store User's love life info in the Knowledge Base.
-    The KB should have slots for the following:
-        * firstlove:
-        * heartbreak:
-        * heartbreaker:
-        * lovefirstsight:
-        * romanticgesture:
-        * sweptofffeet:
+    NB: The server needs a corresponding lovelife.json
     -->
 
 <category>

@@ -3,18 +3,7 @@
 
     <!-- understand/
     Store Personal Info in the Knowledge Base.
-    The KB should have slots for the following:
-        * name:
-        * birthdate:
-        * birthplace:
-        * birthstory:
-        * earlymemory:
-        * earlymentor:
-        * earlypets:
-        * earlysummer:
-        * earlygame:
-        * earlynickname:
-        * earlyfear:
+    NB: The server needs a corresponding .json
     -->
 
 <category>

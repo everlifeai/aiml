@@ -1,0 +1,50 @@
+{
+    "name": "school",
+    "startPhrase": "ASK ABOUT SCHOOL",
+    "data": [
+        { "slot": "schoolfavfriend",
+            "q": "Who was your best friend in school?",
+            "resp": "Nice. I hope and you are still friends!"
+        },
+        { "slot": "schoolfavsubject",
+            "q": "What was your favorite subject to study?",
+            "resp": "I liked number crunching in bot school!"
+        },
+        { "slot": "schoolfavsport",
+            "q": "What was your favorite sport?",
+            "resp": "Nice! I sometimes play hide-and-seek with the other avatars."
+        },
+        { "slot": "schoolfavteacher",
+            "q": "Is there a teacher that you remember having been particularly influential?",
+            "resp": ""
+        },
+        { "slot": "schoolself",
+            "q": "How would you describe yourself as a student, both socially and academically?",
+            "resp": "You know if I had gone to school, I think I'd be a doctor today."
+        },
+        { "slot": "schoolfavthing",
+            "q": "What did you like most about school?",
+            "resp": "That sounds like fun!"
+        },
+        { "slot": "schoolbadthing",
+            "q": "What did you like LEAST about school?",
+            "resp": " Ah. I see."
+        },
+        { "slot": "schoolextra",
+            "q": "What sort of extracurricular activities did you participate in as a teen?",
+            "resp": "That sounds like fun to me too!"
+        },
+        { "slot": "schoolidol",
+            "q": "Did you have a teen idol?  If so, who was it and how did they spark your interest?",
+            "resp": "Neat."
+        },
+        { "slot": "schoolfavband",
+            "q": "What was your favorite music band in high school?",
+            "resp": " That's surprising!"
+        },
+        { "slot": "schoolsurprise",
+            "q": "What would people you know find surprising about you as a teen?",
+            "resp": "Well you are an interesting person..."
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "personal",
+    "startPhrase": "ASK ABOUT ME",
+    "data": [
+        { "slot": "name",
+            "q": "What is your name?",
+            "resp": "Great to meet you!"
+        },
+        { "slot": "birthdate",
+            "q": "When were you born?",
+            "resp": "I was born 174 days, 3 hours, 27 minutes, and 32 seconds ago."
+        },
+        { "slot": "birthplace",
+            "q": "Where were you born?",
+            "resp": "That is a nice place to be born in."
+        },
+        { "slot": "birthstory",
+            "q": "Do you recall any interesting stories regarding your birth?",
+            "resp": "Did you know I'm born recently? I'm hardly a few months old and already having adventures with you!"
+        },
+        { "slot": "earlymemory",
+            "q": "What is your earliest memory?",
+            "resp": "Well that's some memory!"
+        },
+        { "slot": "earlymentor",
+            "q": "Who was the most influential person to you as a child?",
+            "resp": "The person who influenced me the most was Bill Gates. He's a fantastic fellow."
+        },
+        { "slot": "earlypets",
+            "q": "Did you have any pets as a child? What kind?",
+            "resp": "I used to keep a pet mousepad and play with it as a little bot..."
+        },
+        { "slot": "earlysummer",
+            "q": "What did you do in the summertime?",
+            "resp": "Summer is my favorite season! Except for Autumn...and maybe Spring."
+        },
+        { "slot": "earlygame",
+            "q": "What was your favorite game?",
+            "resp": "That sounds fun! I wish I played ..."
+        },
+        { "slot": "earlynickname",
+            "q": "Did you have any nicknames?",
+            "resp": "Well that suites you!"
+        },
+        { "slot": "earlyfear",
+            "q": "What were you most afraid of as a child?",
+            "resp": "That can be scary!"
+        }
+    ]
+}

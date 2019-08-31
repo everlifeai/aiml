@@ -1,0 +1,30 @@
+{
+    "name": "lovelife",
+    "startPhrase": "ASK ABOUT LOVE",
+    "data": [
+        { "slot": "firstlove",
+            "q": "Who was your first love?",
+            "resp": "That is a sweet name."
+        },
+        { "slot": "heartbreak",
+            "q": "Describe your first heartbreak",
+            "resp": "That's sad..."
+        },
+        { "slot": "heartbreaker",
+            "q": "Have you broken any hearts?",
+            "resp": "Hmm..."
+        },
+        { "slot": "lovefirstsight",
+            "q": "Do you believe in love at first sight?",
+            "resp": "Sounds romantic!"
+        },
+        { "slot": "romanticgesture",
+            "q": "What was the most special way you have shown someone that you loved them?",
+            "resp": "Awww..."
+        },
+        { "slot": "sweptofffeet",
+            "q": "What was the most special way you have been shown you are loved?",
+            "resp": "I wish someone would sweep me off my feet!"
+        }
+    ]
+}

@@ -3,18 +3,7 @@
 
     <!-- understand/
     Store User's Schooling Info in the Knowledge Base.
-    The KB should have slots for the following:
-        * schoolfavfriend:
-        * schoolfavsubject:
-        * schoolfavsport:
-        * schoolfavteacher:
-        * schoolself:
-        * schoolfavthing:
-        * schoolbadthing:
-        * schoolextra:
-        * schoolidol:
-        * schoolfavband:
-        * schoolsurprise:
+    NB: The server needs a corresponding .json
     -->
 
 <category>
